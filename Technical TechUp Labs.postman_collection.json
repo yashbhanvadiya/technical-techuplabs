@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "b4d5a62e-f2fe-4a6e-a90d-277c25e0f2f7",
+		"name": "Technical TechUp Labs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16135322"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "yash@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Yash@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/technical-techuplabs/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"technical-techuplabs",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Kishan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishan1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Kishan@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/technical-techuplabs/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"technical-techuplabs",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmQxYjBjZmQ3YWFkYTRmZjlmZGE5ZjZhOWI1MmU4ODQ4YjE2ODAzM2FiMmZkYWJiY2E4YmUzMTkzNzUyMDZhMzhiYWNiODYyZTFmOTQ5ZjUiLCJpYXQiOjE3MTAxNzU1OTAuNTM5MzU4LCJuYmYiOjE3MTAxNzU1OTAuNTM5MzY0LCJleHAiOjE3NDE3MTE1OTAuNTE2NzQzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HLQDQ4ke64j9jc-ubBJpkUiKd53JWIEsVYseiuucVKloWFVnu3gHfoSJvfZn2sBTlBHsibtlnHSKexulFbKpKxQ0TTkfVwQ4wIFS9q7YIEjAHI4d5ay7itOf2wFDcwovSmziT0U9Dqki7WKqYW7zRtVZidERV_7LmePDeWIWRs1HUiR_8PCGqthaJg5wyZggnLQiA6UxRYdLnZkt1_4Z58iAtMKbgsfZwvLUGJl07Ax3KzFo2qkuiifzDp6ahQtaPbLZS61kjiU10fwZ0uexSZtpe3cD-clWocjgbLoT1F4SjWoazfoiEaHLoMoFdphnxBSuoEEx380Ns6ZQz3BTAsSWEpafLMFy7a984_L7NtpOguLMBW68Ii-oTJdsHZZ14gcn8PPNyyqn169uwJ1rLa_vj_oGd9J0PfiIEYTeJuPkt-pYthpyoVZJoD1_BD8yHSVylbQZN-Lvf4ZafEdwzfMwRrstZP7eiRTuCnhY3PojZSuAD4Lva5IYA2YRyUsG0Q928l15NbrDdP3Jv7l7AnMUoQ2-tHrlBfpychVx-oQBGJCuEFsn6g07ET0f91uTI88SWFry1Iv6qyRXBSb48tRgzZWXUjcywU1q00oV7di6I-d5QhDVge_6Q3GVaOVPyrRPkRDBQbddVQVXWxorLtOS2rDDuKja8k_fgVKYklw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1/technical-techuplabs/api/task",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"technical-techuplabs",
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmQxYjBjZmQ3YWFkYTRmZjlmZGE5ZjZhOWI1MmU4ODQ4YjE2ODAzM2FiMmZkYWJiY2E4YmUzMTkzNzUyMDZhMzhiYWNiODYyZTFmOTQ5ZjUiLCJpYXQiOjE3MTAxNzU1OTAuNTM5MzU4LCJuYmYiOjE3MTAxNzU1OTAuNTM5MzY0LCJleHAiOjE3NDE3MTE1OTAuNTE2NzQzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HLQDQ4ke64j9jc-ubBJpkUiKd53JWIEsVYseiuucVKloWFVnu3gHfoSJvfZn2sBTlBHsibtlnHSKexulFbKpKxQ0TTkfVwQ4wIFS9q7YIEjAHI4d5ay7itOf2wFDcwovSmziT0U9Dqki7WKqYW7zRtVZidERV_7LmePDeWIWRs1HUiR_8PCGqthaJg5wyZggnLQiA6UxRYdLnZkt1_4Z58iAtMKbgsfZwvLUGJl07Ax3KzFo2qkuiifzDp6ahQtaPbLZS61kjiU10fwZ0uexSZtpe3cD-clWocjgbLoT1F4SjWoazfoiEaHLoMoFdphnxBSuoEEx380Ns6ZQz3BTAsSWEpafLMFy7a984_L7NtpOguLMBW68Ii-oTJdsHZZ14gcn8PPNyyqn169uwJ1rLa_vj_oGd9J0PfiIEYTeJuPkt-pYthpyoVZJoD1_BD8yHSVylbQZN-Lvf4ZafEdwzfMwRrstZP7eiRTuCnhY3PojZSuAD4Lva5IYA2YRyUsG0Q928l15NbrDdP3Jv7l7AnMUoQ2-tHrlBfpychVx-oQBGJCuEFsn6g07ET0f91uTI88SWFry1Iv6qyRXBSb48tRgzZWXUjcywU1q00oV7di6I-d5QhDVge_6Q3GVaOVPyrRPkRDBQbddVQVXWxorLtOS2rDDuKja8k_fgVKYklw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "subject",
+							"value": "Task Subject 12",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test Description",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2024-03-15",
+							"type": "text"
+						},
+						{
+							"key": "due_date",
+							"value": "2024-03-20",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "New",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "High",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "[{\"subject\": \"Note 1 Subject\",\"note\": \"Note 1 Content\"},{\"subject\": \"Note 2 Subject\",\"note\": \"Note 2 Content\"}]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/technical-techuplabs/api/task/add-task",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"technical-techuplabs",
+						"api",
+						"task",
+						"add-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmQxYjBjZmQ3YWFkYTRmZjlmZGE5ZjZhOWI1MmU4ODQ4YjE2ODAzM2FiMmZkYWJiY2E4YmUzMTkzNzUyMDZhMzhiYWNiODYyZTFmOTQ5ZjUiLCJpYXQiOjE3MTAxNzU1OTAuNTM5MzU4LCJuYmYiOjE3MTAxNzU1OTAuNTM5MzY0LCJleHAiOjE3NDE3MTE1OTAuNTE2NzQzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HLQDQ4ke64j9jc-ubBJpkUiKd53JWIEsVYseiuucVKloWFVnu3gHfoSJvfZn2sBTlBHsibtlnHSKexulFbKpKxQ0TTkfVwQ4wIFS9q7YIEjAHI4d5ay7itOf2wFDcwovSmziT0U9Dqki7WKqYW7zRtVZidERV_7LmePDeWIWRs1HUiR_8PCGqthaJg5wyZggnLQiA6UxRYdLnZkt1_4Z58iAtMKbgsfZwvLUGJl07Ax3KzFo2qkuiifzDp6ahQtaPbLZS61kjiU10fwZ0uexSZtpe3cD-clWocjgbLoT1F4SjWoazfoiEaHLoMoFdphnxBSuoEEx380Ns6ZQz3BTAsSWEpafLMFy7a984_L7NtpOguLMBW68Ii-oTJdsHZZ14gcn8PPNyyqn169uwJ1rLa_vj_oGd9J0PfiIEYTeJuPkt-pYthpyoVZJoD1_BD8yHSVylbQZN-Lvf4ZafEdwzfMwRrstZP7eiRTuCnhY3PojZSuAD4Lva5IYA2YRyUsG0Q928l15NbrDdP3Jv7l7AnMUoQ2-tHrlBfpychVx-oQBGJCuEFsn6g07ET0f91uTI88SWFry1Iv6qyRXBSb48tRgzZWXUjcywU1q00oV7di6I-d5QhDVge_6Q3GVaOVPyrRPkRDBQbddVQVXWxorLtOS2rDDuKja8k_fgVKYklw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1/technical-techuplabs/api/task/delete-task/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"technical-techuplabs",
+						"api",
+						"task",
+						"delete-task",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
